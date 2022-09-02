@@ -11,7 +11,7 @@ const path = require('path');
 const rateLimit = require('express-rate-limit');
 
 //importation des differentes routes : route de connection à la BDD de mongoDB route sauce et route user
-const mongoose = require('./db/db');
+const mongoose = require('./bdd/bdd');
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 

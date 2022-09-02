@@ -76,7 +76,7 @@ exports.modifySauce = (req, res, next) => {
 //Suppression d'une sauce
 exports.deleteSauce = (req, res, next) => {
   const token = req.headers.authorization.split(' ')[1];
-  const decodedToken = jwt.verify(token, 'RANDOM_TOKEN_SECRET');
+  const decodedToken = jwt.verify(token, 'fdbj26$q5ùsdqsd9fçdqè4');
   const userId = decodedToken.userId;
   Sauce.findOne({ _id: req.params.id })
     .then((sauce) => {
